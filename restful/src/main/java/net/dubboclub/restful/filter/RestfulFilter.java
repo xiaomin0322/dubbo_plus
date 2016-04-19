@@ -17,6 +17,7 @@ import com.alibaba.dubbo.rpc.*;
 public class RestfulFilter implements Filter {
     @Override
     public Result invoke(Invoker<?> invoker, Invocation invocation) throws RpcException {
+        //获取方法参数
         invocation.getAttachments().putAll(RpcContext.getContext().getAttachments());
         return invoker.invoke(invocation);
     }

@@ -61,6 +61,9 @@ public class RestfulInvoker implements Invoker {
     }
 
     @Override
+    /**
+     * dubbo spring 获取调用的时候，把那种调用方式，转换为 restful 相当于是协议转换
+     */
     public Result invoke(Invocation invocation) throws RpcException {
         Object[] args = invocation.getArguments();
         Map<String,Object> requestMap = new HashMap<String, Object>();

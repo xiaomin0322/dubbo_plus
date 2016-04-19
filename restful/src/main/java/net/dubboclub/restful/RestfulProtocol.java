@@ -35,6 +35,10 @@ public class RestfulProtocol extends AbstractProxyProtocol{
 
 
     @Override
+    /**
+     * dubbo spi bean 注册入口
+     * httpserver 绑定
+     */
     protected <T> Runnable doExport(T impl, Class<T> type, final URL url) throws RpcException {
         String contextPath = ConfigUtils.getProperty("dubbo.protocol.restful.contextpath","/");
         String addr = url.getIp() + ":" + url.getPort();
@@ -58,6 +62,9 @@ public class RestfulProtocol extends AbstractProxyProtocol{
     }
 
     @Override
+    /**
+     * dubbo消费者消费获取invoker对象
+     */
     public <T> Invoker<T> refer(Class<T> type, URL url) throws RpcException {
         if(!REFER_MAPPER.containsKey(type)){
             REFER_MAPPER.put(type,new RestfulInvoker(url.setProtocol("http"),type));
