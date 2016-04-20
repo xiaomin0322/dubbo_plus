@@ -20,6 +20,13 @@ import java.util.Map;
  * @fix:
  * @description: 描述功能
  */
+
+/**
+ * Restful 客户端 Invoker 封装 
+ * 通过httpclient 发送http请求
+ * @author zzm
+ *
+ */
 public class RestfulInvoker implements Invoker {
 
     private Class<?> serviceType;

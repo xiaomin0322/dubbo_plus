@@ -22,6 +22,12 @@ import java.util.Enumeration;
 /**
  * Created by bieber on 2015/11/5.
  */
+
+/**
+ * Restful 服务端  invoker 封装
+ * @author zzm
+ *
+ */
 public class RestfulHandler implements HttpHandler {
 
     private ServiceMappingContainer serviceMappingContainer;

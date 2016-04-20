@@ -24,6 +24,13 @@ import java.util.Map;
  * @fix:
  * @description: HTTP调用代理
  */
+
+
+/**
+ * http 请求
+ * @author zzm
+ *
+ */
 public class HttpInvoker {
 
     private static final CloseableHttpClient httpclient = HttpClients.createDefault();
@@ -38,6 +45,7 @@ public class HttpInvoker {
             Header[] headers = new Header[headerMap.size()];
             int index=0;
             for(Map.Entry<String,String> entry:headerMap.entrySet()){
+            	//将  Attachment 封装到http 消息头部
                 Header header = new BasicHeader(RestfulConstants.RESTFUL_HEADER_KEY_PREFIX+entry.getKey(),entry.getValue());
                 headers[index]=header;
                 index++;

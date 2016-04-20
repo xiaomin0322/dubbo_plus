@@ -20,7 +20,10 @@ import java.util.Map;
 
 /**
  * Created by bieber on 2015/11/5.
+ * RestfulProtocol 扩展协议
  */
+
+
 public class RestfulProtocol extends AbstractProxyProtocol{
     
     private static final Map<Class<?>,Object> REFER_MAPPER = new HashMap<Class<?>, Object>();
