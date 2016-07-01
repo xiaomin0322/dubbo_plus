@@ -1,0 +1,27 @@
+# Eclipse
+.classpath
+.project
+.settings/
+
+# Intellij
+.idea/
+*.iml
+*.iws
+
+# Mac
+.DS_Store
+
+# Maven
+log/
+target/
+
+
+catalina.home_IS_UNDEFINED/
+catalina.home_IS_UNDEFINED/ cd
+.directory
+.springBeans
+
+#
+logs/
+*registry-cache.properties
+*registry-cache.properties.lock

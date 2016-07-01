@@ -9,8 +9,7 @@
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
-    <artifactId>restful</artifactId>
-    <version>0.0.1</version>
+    <artifactId>dubbo-restful</artifactId>
 
     <properties>
         <zkclient.version>0.3</zkclient.version>

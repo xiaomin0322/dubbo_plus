@@ -79,6 +79,7 @@ public class ServiceMappingContainer {
     }
 
     public void unregisterService(URL url) {
+    	System.out.println(url.getAbsolutePath());
         SERVICE_MAPPING.remove(url.getAbsolutePath());
     }
 

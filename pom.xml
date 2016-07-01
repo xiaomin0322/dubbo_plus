@@ -68,13 +68,9 @@
         </dependency>
     </dependencies>
     <modules>
-        <module>cache</module>
-        <module>cricuitbreaker</module>
-        <module>dubbo-plus-all</module>
-        <module>netty4</module>
-        <module>dubbo-generator</module>
-        <module>restful</module>
-        <module>cat-monitor</module>
+        <module>dubbo-restful</module>
+        <module>dubbo-cat</module>
+        <module>dubbo-brave</module>
     </modules>
     <build>
         <plugins>
