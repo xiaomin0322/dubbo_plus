@@ -10,7 +10,8 @@ import net.dubboclub.catmonitor.constants.CatConstants;
 import java.util.List;
 
 /**
- * Created by bieber on 2015/11/12.
+ * 注册中心扩展
+ * 
  */
 public class CatRegistryFactoryWrapper implements RegistryFactory {
     private RegistryFactory registryFactory;
@@ -26,6 +27,13 @@ public class CatRegistryFactoryWrapper implements RegistryFactory {
 
     class RegistryWrapper implements Registry {
         private Registry originRegistry;
+        
+        /**
+         * 消费者获取的是appliction是自己的application名称，com.alibaba.dubbo.rpc.cluster.support.ClusterUtils.mergeUrl(URL, Map<String, String>)
+         * 冗余了一个服务端application名称
+         * @param url
+         * @return URL
+         */
         private URL appendProviderAppName(URL url){
             String side = url.getParameter(Constants.SIDE_KEY);
             if(Constants.PROVIDER_SIDE.equals(side)){
