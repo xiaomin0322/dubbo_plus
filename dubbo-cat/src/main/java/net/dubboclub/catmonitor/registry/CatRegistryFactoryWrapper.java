@@ -10,7 +10,7 @@ import net.dubboclub.catmonitor.constants.CatConstants;
 import java.util.List;
 
 /**
- * 注册中心扩展
+ * 注册中 自动Wrap扩展点的Wrapper类
  * 
  */
 public class CatRegistryFactoryWrapper implements RegistryFactory {
