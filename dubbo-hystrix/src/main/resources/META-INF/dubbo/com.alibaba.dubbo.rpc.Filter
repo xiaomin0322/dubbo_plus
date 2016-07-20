@@ -1,0 +1,1 @@
+hystrix=net.dubboclub.hystrix.filter.HystrixFilter

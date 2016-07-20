@@ -71,6 +71,7 @@
         <module>dubbo-restful</module>
         <module>dubbo-cat</module>
         <module>dubbo-brave</module>
+        <module>dubbo-hystrix</module>
     </modules>
     <build>
         <plugins>
